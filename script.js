@@ -27,7 +27,7 @@ function displayResults(responseJson) {
 function getNationalParks(query, limit=10) {
   const params = {
     api_key: apiKey,
-    q: query,
+    stateCode: [query],
     limit,
   };
   const queryString = formatQueryParams(params)
@@ -53,7 +53,7 @@ function watchForm() {
     event.preventDefault();
     const searchTerm = $('#js-search-term').val();
     const limit = $('#js-limit').val();
-    getNationalParks(searchTerm, limit);
+    getNationalParks(searchTerm.replace(/ /g,''), limit);
   });
 }
 

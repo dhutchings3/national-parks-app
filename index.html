@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>National Parks App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -13,10 +14,10 @@
         <h1>National Parks Search</h1>
 
         <form id="js-form">
-            <label for="search-term">State:</label>
-            <input type="text" name="search-term" id="js-search-term" required>
+            <label for="search-term">State(s):</label>
+            <input type="text" name="search-term" id="js-search-term" placeholder="TX, NY..."required>
     
-            <label for="max-results">Maximum results to return</label>
+            <label for="max-results">Maximum results</label>
             <input type="number" name="limit" id="js-limit" value="10">
     
             <input type="submit" value="Go!">
